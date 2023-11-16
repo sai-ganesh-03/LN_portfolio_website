@@ -1,189 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0047B2" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-        * {
-            font-family: "Poppins", sans-serif;
-        }
+      * {
+        font-family: "Poppins", sans-serif;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        ::-webkit-scrollbar {
-            width: 0.7vw;
-            background: transparent;
-        }
+      ::-webkit-scrollbar {
+        width: 0.7vw;
+        background: transparent;
+      }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: -webkit-linear-gradient(transparent, #999);
-            background: linear-gradient(transparent, #999);
-            border-radius: 20px;
-        }
+      ::-webkit-scrollbar-thumb:hover {
+        background: -webkit-linear-gradient(transparent, #999);
+        background: linear-gradient(transparent, #999);
+        border-radius: 20px;
+      }
 
-        ::-webkit-scrollbar-thumb {
-            background: -webkit-linear-gradient(transparent, #00c6ff);
-            background: linear-gradient(transparent, #00c6ff);
-            border-radius: 10px;
-        }
+      ::-webkit-scrollbar-thumb {
+        background: -webkit-linear-gradient(transparent, #00c6ff);
+        background: linear-gradient(transparent, #00c6ff);
+        border-radius: 10px;
+      }
     </style>
 
     <title>Lakshminarayana.net</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ##########################NAVBAR############################## -->
-    <nav class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10">
-        <div class="flex flex-wrap items-center justify-between mx-auto">
-            <a href="./index.html" class="flex items-center">
-                <span
-                    class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.net</span>
-            </a>
-            <div class="flex md:order-2">
-                <a href="./contactMe.html">
-                    <button type="button"
-                        class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 mt-[0.3rem] md:mt-0 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Contact Me
-                    </button>
-                </a>
-                <button id="navbar-cta-btn" data-collapse-toggle="navbar-cta" type="button"
-                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-cta" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                <ul
-                    class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700">
-                    <li>
-                        <a href="./index.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Home</a>
-                    </li>
-                    <li>
-                        <a href="./aboutMe.html"
-                            class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
-                            aria-current="page">About Me</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#publications"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Publications</a>
-                    </li>
-                    <li>
-                        <a href="./other_works.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Other
-                            Work</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10"
+    >
+      <div class="flex flex-wrap items-center justify-between mx-auto">
+        <a href="./index.html" class="flex items-center">
+          <span
+            class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
+            >Lakshminarayana.net</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <a href="./contactMe.html">
+            <button
+              type="button"
+              class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 mt-[0.3rem] md:mt-0 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Contact Me
+            </button>
+          </a>
+          <button
+            id="navbar-cta-btn"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./aboutMe.html"
+                class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
+                aria-current="page"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#publications"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="./other_works.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Other Work</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- ##########################NAVBAR############################## -->
     <!-- #############################Projects######################### -->
     <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-            <div class="flex items-end justify-between">
-                <div class="flex-1 text-center lg:text-left">
-                    <h2 class="text-3xl mb-4 mt-12 md:mt-4 font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                        Projects
-                    </h2>
-                </div>
-            </div>
-            <img src="./imgs/project_profile.jpg" alt="Profile" class="mt-8" style="
-            width: 420px;
-            height: 305px;
-            border-radius: 30px;
-            " />
-            <p class="mt-8 text-justify">
-                <b style="
-                     left: 4.76%; right: 5.12%; top: 35.65%; bottom: 56%; font-family: 'Merriweather'
-                    ; font-style: normal; font-weight: 700; font-size: 23px;  /* Kepler */ color:
-                    #08080B; 
-                    "> " Revolutionizing the Future: Empowering Youth in Innovative Projects Supported by DRDO "
-                </b><br /><br />I am immensely proud to share that I had the opportunity to guide a group of final
-                year students in a project that was funded by DRDO (Defense Research and Development Organization).
-                This experience fills me with gratitude and an overwhelming sense of achievement.<br /><br />
-                Working with these talented students was a joyous and fulfilling experience. Their dedication,
-                enthusiasm, and thirst for knowledge were truly inspiring. Together, we embarked on a journey to
-                develop a groundbreaking project that aligned with DRDO's mission of innovation and technological
-                advancement.<br /><br />
-                Throughout the project, we faced numerous challenges, but with perseverance and collaboration, we
-                overcame each obstacle. The students displayed remarkable problem-solving skills, creativity, and a
-                strong work ethic. Their passion and commitment were evident in the exceptional results they
-                achieved.<br /><br />
-                Being able to contribute to the project's success and witness the growth of these young minds has
-                been immensely gratifying. It is a testament to the power of teamwork and mentorship.<br /><br />
-                I express my deepest gratitude to DRDO for providing the opportunity to work on this project and for
-                their invaluable support. The experience has not only enhanced my own knowledge and skills but has
-                also reinforced my belief in the importance of nurturing and guiding the next generation of
-                innovators and researchers.<br /><br />
-                In conclusion, this project and the collaboration with the final year students have left an
-                indelible mark on my professional journey, evoking a profound sense of pride, fulfillment, and
-                gratitude.
-            </p>
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="flex items-end justify-between">
+          <div class="flex-1 text-center lg:text-left">
+            <h2
+              class="text-3xl mb-4 mt-12 md:mt-4 font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            >
+              Projects
+            </h2>
+          </div>
         </div>
+        <img
+          src="./imgs/project_profile.jpg"
+          alt="Profile"
+          class="mt-8"
+          style="width: 420px; height: 305px; border-radius: 30px"
+        />
+        <p class="mt-8 text-justify">
+          <b
+            style="
+              left: 4.76%;
+              right: 5.12%;
+              top: 35.65%;
+              bottom: 56%;
+              font-family: 'Merriweather';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 23px; /* Kepler */
+              color: #08080b;
+            "
+          >
+            " Revolutionizing the Future: Empowering Youth in Innovative
+            Projects Supported by DRDO " </b
+          ><br /><br />I am immensely proud to share that I had the opportunity
+          to guide a group of final year students in a project that was funded
+          by DRDO (Defense Research and Development Organization). This
+          experience fills me with gratitude and an overwhelming sense of
+          achievement.<br /><br />
+          Working with these talented students was a joyous and fulfilling
+          experience. Their dedication, enthusiasm, and thirst for knowledge
+          were truly inspiring. Together, we embarked on a journey to develop a
+          groundbreaking project that aligned with DRDO's mission of innovation
+          and technological advancement.<br /><br />
+          Throughout the project, we faced numerous challenges, but with
+          perseverance and collaboration, we overcame each obstacle. The
+          students displayed remarkable problem-solving skills, creativity, and
+          a strong work ethic. Their passion and commitment were evident in the
+          exceptional results they achieved.<br /><br />
+          Being able to contribute to the project's success and witness the
+          growth of these young minds has been immensely gratifying. It is a
+          testament to the power of teamwork and mentorship.<br /><br />
+          I express my deepest gratitude to DRDO for providing the opportunity
+          to work on this project and for their invaluable support. The
+          experience has not only enhanced my own knowledge and skills but has
+          also reinforced my belief in the importance of nurturing and guiding
+          the next generation of innovators and researchers.<br /><br />
+          In conclusion, this project and the collaboration with the final year
+          students have left an indelible mark on my professional journey,
+          evoking a profound sense of pride, fulfillment, and gratitude.
+        </p>
+      </div>
     </section>
 
     <!-- #############################Projects######################### -->
     <!-- #############################Footer######################### -->
 
     <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="./index.html" class="flex items-center">
-                <span
-                    class="self-center text-xl mb-2 sm:mb-0 md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.net</span>
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">LinkedIn</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023 |
-            <a href="./index.html" class="hover:underline">Lakshminarayana.net</a>
-            | All Rights Reserved.
-        </span>
-        <span class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400">Developed by
-            <a href="./index.html" class="hover:underline">Random Tech Solutions</a>
-        </span>
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="./index.html" class="flex items-center">
+          <span
+            class="self-center text-xl mb-2 sm:mb-0 md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
+            >Lakshminarayana.net</span
+          >
+        </a>
+        <ul
+          class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <hr
+        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+      />
+      <span
+        class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >Copyright © 2023 |
+        <a href="./index.html" class="hover:underline">Lakshminarayana.net</a>
+        | All Rights Reserved.
+      </span>
+      <span
+        class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >Developed by
+        <a href="./index.html" class="hover:underline">Random Tech Solutions</a>
+      </span>
     </footer>
 
     <!-- #############################Footer######################### -->
     <script>
-        const button = document.querySelector("#navbar-cta-btn");
-        const menu = document.querySelector("#navbar-cta");
+      const button = document.querySelector("#navbar-cta-btn");
+      const menu = document.querySelector("#navbar-cta");
 
-        button.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
     </script>
-</body>
-
+  </body>
 </html>

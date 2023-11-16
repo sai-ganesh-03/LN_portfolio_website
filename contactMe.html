@@ -1,203 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0047B2" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-        * {
-            font-family: "Poppins", sans-serif;
-        }
+      * {
+        font-family: "Poppins", sans-serif;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        ::-webkit-scrollbar {
-            width: 0.7vw;
-            background: transparent;
-        }
+      ::-webkit-scrollbar {
+        width: 0.7vw;
+        background: transparent;
+      }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: -webkit-linear-gradient(transparent, #999);
-            background: linear-gradient(transparent, #999);
-            border-radius: 20px;
-        }
+      ::-webkit-scrollbar-thumb:hover {
+        background: -webkit-linear-gradient(transparent, #999);
+        background: linear-gradient(transparent, #999);
+        border-radius: 20px;
+      }
 
-        ::-webkit-scrollbar-thumb {
-            background: -webkit-linear-gradient(transparent, #00c6ff);
-            background: linear-gradient(transparent, #00c6ff);
-            border-radius: 10px;
-        }
+      ::-webkit-scrollbar-thumb {
+        background: -webkit-linear-gradient(transparent, #00c6ff);
+        background: linear-gradient(transparent, #00c6ff);
+        border-radius: 10px;
+      }
     </style>
 
     <title>Lakshminarayana.net</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ##########################NAVBAR############################## -->
-    <nav class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10">
-        <div class="flex flex-wrap items-center justify-between mx-auto">
-            <a href="./index.html" class="flex items-center">
-                <span
-                    class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.net</span>
-            </a>
-            <div class="flex md:order-2">
-                <a href="./contactMe.html">
-                    <button type="button"
-                        class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 mt-[0.3rem] md:mt-0 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Contact Me
-                    </button>
-                </a>
-                <button id="navbar-cta-btn" data-collapse-toggle="navbar-cta" type="button"
-                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-cta" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                <ul
-                    class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700">
-                    <li>
-                        <a href="./aboutMe.html"
-                            class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
-                            aria-current="page">About Me</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#publications"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Publications</a>
-                    </li>
-                    <li>
-                        <a href="./projects.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./other_works.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent">Other
-                            Work</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="bg-white fixed w-full border-gray-200 px-4 sm:px-4 py-2.5 rounded z-10"
+    >
+      <div class="flex flex-wrap items-center justify-between mx-auto">
+        <a href="./index.html" class="flex items-center">
+          <span
+            class="self-center text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
+            >Lakshminarayana.net</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <a href="./contactMe.html">
+            <button
+              type="button"
+              class="text-white bg-[#0047B2] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 md:px-5 md:py-2.5 text-center mr-3 mt-[0.3rem] md:mt-0 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Contact Me
+            </button>
+          </a>
+          <button
+            id="navbar-cta-btn"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="./aboutMe.html"
+                class="block py-2 pl-3 pr-4 border-b-2 md:border-b-0 text-gray-700 md:bg-transparent md:text-gray-400 md:p-0 dark:hover:text-[#0047B2] dark:text-gray-400"
+                aria-current="page"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#publications"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./profile.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="./other_works.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:border-b-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#0047B2] dark:text-gray-400 dark:hover:text-[#0047B2] md:dark:hover:bg-transparent"
+                >Other Work</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- ##########################NAVBAR############################## -->
 
-
     <!-- ##########################Contact Us############################## -->
     <div class="flex flex-col min-h-screen bg-gray-50 w-full">
-        <div class="py-16 flex-grow max-w-[70%] mx-auto">
-            <h2
-                class="text-3xl mb-4 mt-12 md:mt-4 font-bold leading-tight text-black sm:text-4xl lg:text-5xl py-5 text-center">
-                Contact Me</h2>
+      <div class="py-16 flex-grow sm:w-[55%] mx-auto">
+        <h2
+          class="text-3xl mb-4 mt-12 md:mt-4 font-bold leading-tight text-black sm:text-4xl lg:text-5xl py-5 text-center"
+        >
+          Contact Me
+        </h2>
 
-            <form action="https://mailthis.to/lngp.eee@bmsce.ac.in" method="post"
-                onsubmit="return validateForm()">
-                <div class="mb-4">
-                    <input type="text border-2" placeholder="Your full name" name="full_name" id="full_name"
-                        class="w-full px-4 py-2 border rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <input type="email" placeholder="Your e-mail id" name="email" id="email"
-                        class="w-full px-4 py-2 border rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <input type="text" placeholder="Query" name="query" id="query"
-                        class="w-full px-4 py-2 border rounded-md" required>
-                </div>
-                <div class="mb-4">
-                    <textarea name="comments" placeholder="Your Message" cols="30" rows="10"
-                        class="w-full px-4 py-2 border rounded-md" required></textarea>
-                </div>
-                <button type="submit"
-                    class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Submit</button>
-            </form>
+        <form
+          action="https://mailthis.co/lngp.eee@bmsce.ac.in"
+          method="post"
+          onsubmit="return validateForm()"
+        >
+          <div class="mb-4">
+            <input
+              type="text border-2"
+              placeholder="Your full name"
+              name="full_name"
+              id="full_name"
+              class="w-full px-4 py-2 border rounded-md"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="email"
+              placeholder="Your e-mail id"
+              name="email"
+              id="email"
+              class="w-full px-4 py-2 border rounded-md"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Query"
+              name="query"
+              id="query"
+              class="w-full px-4 py-2 border rounded-md"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              name="comments"
+              placeholder="Your Message"
+              cols="30"
+              rows="10"
+              class="w-full px-4 py-2 border rounded-md"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          >
+            Submit
+          </button>
+        </form>
 
-            <script>
-                function validateForm() {
-                    var fullName = document.getElementById("full_name").value;
-                    var email = document.getElementById("email").value;
-                    var query = document.getElementById("query").value;
+        <script>
+          function validateForm() {
+            var fullName = document.getElementById("full_name").value;
+            var email = document.getElementById("email").value;
+            var query = document.getElementById("query").value;
 
-                    if (fullName === "" || email === "" || query === "") {
-                        alert("Please fill in all the fields");
-                        return false;
-                    }
+            if (fullName === "" || email === "" || query === "") {
+              alert("Please fill in all the fields");
+              return false;
+            }
 
-                    // Email validation
-                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!email.match(emailRegex)) {
-                        alert("Please enter a valid email address");
-                        return false;
-                    }
+            // Email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.match(emailRegex)) {
+              alert("Please enter a valid email address");
+              return false;
+            }
 
-                    return true;
-                }
-            </script>
+            return true;
+          }
+        </script>
+      </div>
+      <!-- ##########################Contact Us############################## -->
 
+      <!-- #############################Footer######################### -->
+
+      <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="./index.html" class="flex items-center">
+            <span
+              class="self-center text-xl mb-2 sm:mb-0 md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]"
+              >Lakshminarayana.net</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">LinkedIn</a>
+            </li>
+          </ul>
         </div>
-        <!-- ##########################Contact Us############################## -->
-
-
-        <!-- #############################Footer######################### -->
-
-        <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-50">
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <a href="./index.html" class="flex items-center">
-                    <span
-                        class="self-center text-xl mb-2 sm:mb-0 md:text-2xl lg:text-3xl font-semibold whitespace-nowrap text-[#001858]">Lakshminarayana.net</span>
-                </a>
-                <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023 |
-                <a href="./index.html" class="hover:underline">Lakshminarayana.net</a>
-                | All Rights Reserved.
-            </span>
-            <span class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400">Developed by
-                <a href="/" class="hover:underline">Random Tech Solutions</a>
-            </span>
-        </footer>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >Copyright © 2023 |
+          <a href="./index.html" class="hover:underline">Lakshminarayana.net</a>
+          | All Rights Reserved.
+        </span>
+        <span
+          class="block mt-3 text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >Developed by
+          <a href="/" class="hover:underline">Random Tech Solutions</a>
+        </span>
+      </footer>
     </div>
 
     <!-- #############################Footer######################### -->
 
     <script>
-        const button = document.querySelector("#navbar-cta-btn");
-        const menu = document.querySelector("#navbar-cta");
+      const button = document.querySelector("#navbar-cta-btn");
+      const menu = document.querySelector("#navbar-cta");
 
-        button.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
     </script>
-</body>
-
+  </body>
 </html>
